@@ -7,13 +7,11 @@ Challenge : Open Data University — *Tourisme en Train*
 Sources des données : SNCF, DATAtourisme, ADEME et opérateurs de transport locaux
 <br/>
 <br/>
-
 ---
 <div style="font-size: 1.5em; font-weight: bold;">🚆 Gare au POI !</div>
 <i>Planification d'itinéraires touristiques multimodaux</i>
  
 ---
-<br/>
 
 ## 🎯 Objectif du projet
 
