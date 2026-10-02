@@ -517,27 +517,14 @@ avec :
 - $m_e$ : mode de transport utilisé sur le segment ;
 - $FE(m_e)$ : facteur d'émission du mode de transport en $\mathrm{gCO_2e/(voyageur\cdot km)}$ ;
 - $E(e)$ : émission estimée du segment en $\mathrm{gCO_2e/voyageur}$.
-
+- 
 L'analyse des unités donne :
 
-$$
-\mathrm{km}
-\times
-\frac{\mathrm{gCO_2e}}
-{\mathrm{voyageur}\cdot\mathrm{km}}
-=
-\frac{\mathrm{gCO_2e}}
-{\mathrm{voyageur}}
-$$
+$$\mathrm{km} \times \frac{\mathrm{gCO_2e}}{\mathrm{voyageur}\cdot\mathrm{km}} = \frac{\mathrm{gCO_2e}}{\mathrm{voyageur}}$$
 
 Pour un itinéraire multimodal $P$ composé de plusieurs segments :
 
-$$
-E(P)
-=
-\sum_{e\in P}
-d(e)\times FE(m_e)
-$$
+$$E(P) = \sum_{e\in P} d(e)\times FE(m_e)$$
 
 Le calcul doit donc être effectué **segment par segment**, afin de prendre en compte les différents modes de transport pouvant composer un même itinéraire. Le facteur d'émission peut ainsi être différent d'un segment à l'autre.
 
@@ -559,21 +546,7 @@ Pour le métro : $E_{\mathrm{metro}} = 8 \times 5 = 40\ \mathrm{gCO_2e/voyageur}
 
 L'émission totale estimée est donc :
 
-$$
-E_{\mathrm{total}}
-=
-20+1500+40
-=
-1560\ \mathrm{gCO_2e/voyageur}
-$$
-
-soit :
-
-$$
-E_{\mathrm{total}}
-=
-1{,}56\ \mathrm{kgCO_2e/voyageur}
-$$
+$$E_{\mathrm{total}} = 20+1500+40 = 1560\ \mathrm{gCO_2e/voyageur} =  1{,}56\ \mathrm{kgCO_2e/voyageur}$$
 
 **Les distances et les facteurs d'émission utilisés dans cet exemple sont uniquement illustratifs.** Ils ne doivent pas être utilisés comme valeurs de référence.
 
@@ -817,28 +790,11 @@ Les critères introduits précédemment doivent maintenant être appliqués à l
 
 La durée totale peut par exemple être décomposée en :
 
-$$
-T(P)
-=
-T_{\mathrm{urbain,dep}}
-+
-T_{\mathrm{train}}
-+
-T_{\mathrm{urbain,arr}}
-+
-T_{\mathrm{attente}}
-+
-T_{\mathrm{marche}}
-$$
+$$T(P) = T_{\mathrm{urbain,dep}} + T_{\mathrm{train}} + T_{\mathrm{urbain,arr}} + T_{\mathrm{attente}} + T_{\mathrm{marche}}$$
 
 Les émissions totales sont obtenues en additionnant les émissions des différents segments :
 
-$$
-E(P)
-=
-\sum_{e\in P}
-d(e)\times FE_{\mathrm{mode}(e)}
-$$
+$$ E(P) = \sum_{e\in P} d(e)\times FE_{\mathrm{mode}(e)} $$
 
 Le nombre de correspondances doit également être calculé sur l'ensemble du parcours.
 
